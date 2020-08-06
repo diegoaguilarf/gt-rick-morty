@@ -25,8 +25,10 @@ const useFavorites = data => {
   const validateFavorite = () => {
     let favoriteCharacters = localStorage.getItem("favoriteCharacters");
     favoriteCharacters = JSON.parse(favoriteCharacters);
-    const existFavorite = favoriteCharacters.find(item => item.id == data.id);
-    setIsFavorite(existFavorite ? true : false);
+    if (favoriteCharacters) {
+      const existFavorite = favoriteCharacters.find(item => item.id === data.id);
+      setIsFavorite(existFavorite ? true : false);
+    }
   };
 
   const addFavorite = () => {

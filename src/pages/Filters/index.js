@@ -21,8 +21,8 @@ const Filters = () => {
         "genderless",
         "unknown"
     ]
-    const species = []
-    const type = []
+    const species = ["Human", "Alien", "Humanoid", "Poopybutthole"]
+    const type = ["Human with antennae", "Parasite, Cyborg", "Fish-Person", "Self-aware arm", "Cat-Person", "Human with baby legs"]
 
     const addParamToURL = (event, label) => {
         const value = event.target.value;

@@ -4,10 +4,10 @@ Este proyecto representa una prueba tecnica para la empresa [Grut Studio](https:
 
 ## Librerias externas que se usaron en este proyecto son:
 
-axios": "^0.19.2",
-node-sass": "^4.14.1",
-rc-pagination: "^3.0.1",
-react-router-dom: "^5.2.0",
+> - axios: ^0.19.2
+> - node-sass: ^4.14.1
+> - rc-pagination: ^3.0.1
+> - react-router-dom: ^5.2.0
 
 ### `yarn start`
 

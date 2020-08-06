@@ -1,8 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto representa una prueba tecnica para la empresa [Grut Studio](https://grutstudio.com).
 
-## Available Scripts
+[Demo]()
 
-In the project directory, you can run:
+## Librerias externas que se usaron en este proyecto son:
+
+axios": "^0.19.2",
+node-sass": "^4.14.1",
+rc-pagination: "^3.0.1",
+react-router-dom: "^5.2.0",
 
 ### `yarn start`
 
@@ -27,42 +32,18 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Anotaciones
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- No vi la necesidad de usar un estado centralizado como Redux, ya que es supremamente sencillo el consumo del API y la comunicación entre componentes no estaba compleja.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Filtrar los personajes por status & gender fue sencillo dado que se hardcodeo las opciones en el caso de species
+& type fue más complejo, ya que no conocía sus posibles opciones y la API no exponía estos datos, así que se escogieron unas opciones a ojo entre la lista principal de personajes.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- En las posibles combinaciones de los filtros no se combina con la búsqueda por nombre.
 
-## Learn More
+- El diseño puede mejorar, procure respetar las pantallas dadas.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Estuve en otros asuntos de trabajo y no me dio el tiempo para incluir animaciones y transiciones, en los días siguientes al deadline haré un, reléase con esto.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

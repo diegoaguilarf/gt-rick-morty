@@ -1,0 +1,25 @@
+.characterlist{
+    padding-bottom: 2vw;
+    &__title{
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2vw;
+    }
+    &__pagination{
+        display: flex;
+        justify-content: center;
+        padding: 3vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .characterlist{
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

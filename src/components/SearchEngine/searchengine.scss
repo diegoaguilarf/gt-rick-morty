@@ -1,0 +1,37 @@
+.searchengine{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 4vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    box-shadow: 0.1vw 0.1vw 0.5vw rgba(56, 59, 114, 0.2);
+
+    &__input {
+        width: 100%;
+    }
+
+    &__filters_applied {
+        font-size: 1.1vw;
+        margin-top: 0.8vw
+    }
+
+    & > a,  & > a > button {
+        width: 100%;
+    }
+
+    &__filters_btn {
+        background-color: #ee474a;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 1024px) {
+    .searchengine{
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        grid-gap: 3vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}

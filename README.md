@@ -1,6 +1,6 @@
 Este proyecto representa una prueba tecnica para la empresa [Grut Studio](https://grutstudio.com).
 
-[Demo]()
+[Demo](https://dazzling-hopper-24e600.netlify.app/)
 
 ## Librerias externas que se usaron en este proyecto son:
 
@@ -9,29 +9,18 @@ Este proyecto representa una prueba tecnica para la empresa [Grut Studio](https:
 > - rc-pagination: ^3.0.1
 > - react-router-dom: ^5.2.0
 
-### `yarn start`
+### `npm run start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Corre la aplicación en modo desarrollo<br />
+Abrir [http://localhost:3000](http://localhost:3000) para ver en el navegador.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### `npm run build`
 
-### `yarn test`
+Construye la aplicación para producción en la carpeta `build`.<br />
+Se agrupa correctamente en modo de producción y optimiza el build para el mejor rendimiento.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+El build esta minificado y los nombres de los archivos incluidos en los hashes.<br />
+Tu aplicación esta lista para hacer deployed!
 
 ## Anotaciones
 
@@ -44,6 +33,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - El diseño puede mejorar, procure respetar las pantallas dadas.
 
-- Estuve en otros asuntos de trabajo y no me dio el tiempo para incluir animaciones y transiciones, en los días siguientes al deadline haré un, reléase con esto.
+- Estuve en otros asuntos de trabajo y no me dio el tiempo para incluir animaciones y transiciones, en los días siguientes al deadline haré un release con esto.
 
-
+## Nota
+- Aun me quedan detalles por mejorar, espero me permitan un tiempo extra para terminarlo.

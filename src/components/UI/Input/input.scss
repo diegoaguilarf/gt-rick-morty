@@ -1,0 +1,16 @@
+.input{
+    width: 100%;
+    border-radius: 4vw;
+    padding: 1vw 1.5vw;
+    border-style: none;
+    outline: none;
+    box-shadow: 0.1vw 0.1vw 0.5vw rgba(56, 59, 114, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .input{
+        border-radius: 6vw;
+        padding: 3vw 4vw;
+        box-shadow: 0.5vw 0.5vw 1vw rgba(56, 59, 114, 0.2);
+    }
+}

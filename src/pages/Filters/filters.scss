@@ -1,0 +1,27 @@
+.filters{
+    padding-top: 15vh;
+
+    &__content{
+        width: 30vw;
+        display: grid;
+        grid-gap: 3vw;
+        justify-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .filters{
+        height: 90vh;
+        padding-top: 5vh;
+
+        &__content{
+            width: 100%;
+            grid-gap: 6vw;
+
+            a{
+                margin-top: auto;
+            }
+        }
+    }
+}

@@ -29,9 +29,14 @@ const SearchEngine = ({ onChange }) => {
           onChange={e => setSearchTerm(e.target.value)}
         />
         {sizeParams ? (
-          <p className="searchengine__filters_applied">
-            {sizeParams} {sizeParams === 1 ? 'filtro aplicado' : 'filtros aplicados'}
-          </p>
+          <div className="searchengine__filters">
+            <p className="searchengine__filters_applied">
+              {sizeParams} {sizeParams === 1 ? 'filtro aplicado' : 'filtros aplicados'}
+            </p>
+            <Link to="/personajes">
+              <p className="searchengine__filters_clear">Borrar filtros</p>
+            </Link>
+          </div>
         ) : null}
       </div>
       <Link to="filtros">

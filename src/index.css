@@ -28,8 +28,20 @@ a{
   color: initial;
   text-decoration: none;
 }
+.lg\:hidden{
+  display: none;
+}
+.lg\:block{
+  display: block;
+}
 
 @media (max-width: 1024px) {
+  .hidden{
+    display: none;
+  }
+  .block{
+    display: block;
+  }
   [class*="--wrapper"] {
     padding-left: 6vw;
     padding-right: 6vw;

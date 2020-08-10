@@ -14,10 +14,10 @@ const Favorites = () => {
             :
             <Empty emoji="😟" title="No tienes personajes favoritos" buttonRoute="/personajes" buttonText="VER PERSONAJES">
                 Échale un ojo a la <Link to="/personajes">lista de personajes</Link>, si
-                te gusta alguno
-                <br />
-                solo debes oprimir el corazón y automáticamente lo guardaras
-                <br />
+                te gusta alguno&nbsp;
+                <br className="hidden lg:block"/>
+                solo debes oprimir el corazón y automáticamente lo guardaras&nbsp;
+                <br className="hidden lg:block"/>
                 en tu lista de favoritos
             </Empty>
         }

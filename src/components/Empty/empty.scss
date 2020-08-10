@@ -14,6 +14,7 @@
 
     &__description{
         margin-bottom: 2vw;
+        font-size: 1.1vw;
 
         a{
             font-weight: 700;
@@ -22,8 +23,40 @@
     }
 
     &__action{
-        // font-size: 1vw;
         background-color: #ee474a;
         color: #ffffff;
     }
+}
+
+@media (max-width: 1024px) {
+    .empty{
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__emoji{
+            font-size: 10vw;
+        }
+    
+        &__title{
+            margin-bottom: 2vw;
+            font-size: 5.5vw;
+        }
+    
+        &__description{
+            margin-bottom: 2vw;
+            font-size: 4vw;
+    
+            a{
+                font-weight: 700;
+                color: #384d9e;
+            }
+        }
+    
+        &__action{
+            // font-size: 1vw;
+            background-color: #ee474a;
+            color: #ffffff;
+        }
+    }  
 }

@@ -3,6 +3,7 @@
     &__title{
         margin-top: 2vw;
         margin-bottom: 3vw;
+        font-size: 1.5vw;
     }
     &__items{
         display: grid;
@@ -18,6 +19,10 @@
 
 @media (max-width: 1024px) {
     .characterlist{
+        &__title{
+            font-size: 4vw;
+            margin-bottom: 5vw;
+        }
         &__items {
             grid-template-columns: 1fr;
         }

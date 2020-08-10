@@ -13,14 +13,13 @@
 
     &__filters {
         display: flex;
+        margin-top: 0.8vw;
 
         &_applied {
             font-size: 1.1vw;
-            margin-top: 0.8vw
         }
         &_clear {
             font-size: 1.1vw;
-            margin-top: 0.8vw;
             margin-left: 1vw;
             cursor: pointer;
             color: #ee474a;
@@ -44,5 +43,16 @@
         grid-gap: 3vw;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
+
+        &__filters {
+            margin-top: 2vw;
+    
+            &_applied {
+                font-size: 3.3vw;
+            }
+            &_clear {
+                font-size: 3.3vw;
+            }
+        }
     }
 }

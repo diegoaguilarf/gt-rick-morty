@@ -1,0 +1,29 @@
+.empty{
+    margin-top: 10vw;
+    text-align: center;
+
+    &__emoji{
+        font-size: 3.5vw;
+    }
+
+    &__title{
+        margin-bottom: 1vw;
+        font-weight: 600;
+        font-size: 1.6vw;
+    }
+
+    &__description{
+        margin-bottom: 2vw;
+
+        a{
+            font-weight: 700;
+            color: #384d9e;
+        }
+    }
+
+    &__action{
+        // font-size: 1vw;
+        background-color: #ee474a;
+        color: #ffffff;
+    }
+}

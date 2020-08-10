@@ -19,7 +19,9 @@ const useFavorites = data => {
     }, [data])
 
   const getFavorites = () => {
-    setFavorites(JSON.parse(localStorage.getItem("favoriteCharacters")))
+    let newFavoritesData = JSON.parse(localStorage.getItem("favoriteCharacters"))
+    if(!newFavoritesData || newFavoritesData.length === 0) setFavorites(null)
+    else setFavorites(newFavoritesData)
   };
 
   const validateFavorite = () => {

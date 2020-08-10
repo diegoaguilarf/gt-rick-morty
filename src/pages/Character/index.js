@@ -12,16 +12,16 @@ const Character = () => {
     const { isFavorite, addFavorite, removeFavorite } = useFavorites(character);
 
     useEffect(() => {
+        const fetchData = async () => {
+            const { data } = await axios({
+                method: "GET",
+                url: `https://rickandmortyapi.com/api/character/${id}`
+            })
+            setCharacter(data)
+        }
         fetchData()
-    }, [])
+    }, [id])
 
-    const fetchData = async () => {
-        const { data } = await axios({
-            method: "GET",
-            url: `https://rickandmortyapi.com/api/character/${id}`
-        })
-        setCharacter(data)
-    }
 
     return (character ? <div className="character character--wrapper">
         <div className="character__header">
@@ -39,7 +39,7 @@ const Character = () => {
                 <p>{ character.type }</p>
                 <p>{ character.gender }</p>
             </div>
-            <img src={ character.image } className="character__content__image"/>
+            <img src={ character.image } className="character__content__image" alt={character.name}/>
         </div>
         <div className="character__actions">
             {isFavorite ? (

@@ -14,6 +14,7 @@ const Home = () => {
   const search = useLocation().search;
   const [page, setPage] = useState("");
   const [params, setParams] = useState(search);
+  const [offline, setOffline] = useState(false);
 
   useEffect(() => {
     setParams(search)
@@ -29,6 +30,7 @@ const Home = () => {
         setCharacters(data.results);
         setPaginationInfo(data.info);
       } catch (err) {
+        if(err.message === 'Network Error') setOffline(true)
         setCharacters(null);
         setPaginationInfo({ count: 0 });
       }
@@ -40,6 +42,7 @@ const Home = () => {
   const handleSearch = name => {
     if (name || name === "") {
       setParams(`?name=${name}`);
+      setPage("");
       history.push("/personajes");
     }
   };
@@ -64,10 +67,13 @@ const Home = () => {
           onChangePage={handlePagination}
         />
       ) : (
+        offline ? <Empty emoji="😬" title="¡Sin Internet!">
+          Verifica que estés conectado a una red, y si persiste llama a tu proveedor de internet
+        </Empty> :
         <Empty emoji="🧐" title="¡Rayos Amig@!, ¿Qué estas buscando?">
-          Algo ha salido mal, no encontramos esas especificaciones, ¿Seguro<br/> 
-          estas en la dimensión correcta?
-        </Empty>
+        Algo ha salido mal, no encontramos esas especificaciones, ¿Seguro<br/> 
+        estas en la dimensión correcta?
+      </Empty>
       )}
     </div>
   );

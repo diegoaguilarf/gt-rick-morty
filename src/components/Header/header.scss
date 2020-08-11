@@ -4,13 +4,17 @@
     justify-content: space-between;
     background-color: #222e5e;
     color: white;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 
     &__brand{
         color: #ffffff;
         font-weight: bold;
         font-size: 2.5vw;
+
+        img{
+            max-height: 60px;
+        }
     }
 
     &__menu{
